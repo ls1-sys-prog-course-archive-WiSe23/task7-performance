@@ -73,7 +73,7 @@
     {
       "name": "Test Performance Report Existence",
       "setup": "",
-      "run": "timeout -s9 2m bash tests/test_existence_perf.sh",
+      "run": "timeout -s9 2m python3 tests/test_existence_perf.py",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -83,7 +83,7 @@
     {
       "name": "Test matrix multiplication perf usage",
       "setup": "",
-      "run": "timeout -s9 2m bash tests/test_matrix_stat.sh 0.5 0.2 0.4 0.7 0.2",
+      "run": "timeout -s9 2m python3 tests/test_matrix_stat.py 0.5 0.2 0.4 0.1 0.2",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -93,7 +93,7 @@
     {
       "name": "Test mandelbrot perf usage",
       "setup": "",
-      "run": "timeout -s9 2m bash tests/test_mandelbrot_stat.sh 0.4 0.4 0.4 0.4",
+      "run": "timeout -s9 2m python3 tests/test_mandelbrot_stat.py 0.4 0.4 0.4 0.4",
       "input": "",
       "output": "",
       "comparison": "included",
