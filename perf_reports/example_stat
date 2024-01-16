@@ -1,0 +1,12 @@
+# started on Wed Jun  7 22:47:51 2023
+
+
+ Performance counter stats for './matrix_profiling' (5 runs):
+
+         10 400,79 msec task-clock                #    3,993 CPUs utilized            ( +-  0,55% )
+    33 224 148 755      instructions              #    0,91  insn per cycle           ( +-  0,00% )
+    37 319 642 979      cycles                    #    3,654 GHz                      ( +-  0,54% )
+        39 409 769      cache-misses                                                  ( +-  5,90% )
+
+            2,6050 +- 0,0191 seconds time elapsed  ( +-  0,73% )
+

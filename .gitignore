@@ -1,0 +1,96 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Configurations
+.ycm_extra_conf.py
+
+# perf data
+perf.data
+perf.data.old
+
+# Added by cargo
+/target
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Binaries
+libmatrix.so
+libmandelbrot.so
+generator
+
+tests/matrix_driver
+tests/matrix_driver_output
+
+tests/mandelbrot_driver
+tests/mandelbrot_driver_output
+
+# Do not commit optimized code
+tests/matrix_optimized.cpp
+tests/mandelbrot_optimized.cpp
+map_optimized.cpp
+
+# No Need Large Files
+output
+tests/expected_output
+
+# Commit optimized binaries
+!tests/libmatrix_optimized.so
+!tests/libmandelbrot_optimized.so

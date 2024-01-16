@@ -1,0 +1,124 @@
+{
+  "tests": [
+    {
+      "name": "Build",
+      "setup": "",
+      "run": "timeout -s KILL 2m make all",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Test matrix multiplication (1)",
+      "setup": "",
+      "run": "timeout -s KILL 2m python3 tests/test_matrix_multiplication.py 0.50",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Test matrix multiplication (2)",
+      "setup": "",
+      "run": "timeout -s KILL 2m python3 tests/test_matrix_multiplication.py 0.75",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "Test matrix multiplication (3)",
+      "setup": "",
+      "run": "timeout -s KILL 2m python3 tests/test_matrix_multiplication.py 0.98",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Test mandelbrot (1)",
+      "setup": "",
+      "run": "timeout -s KILL 2m python3 tests/test_mandelbrot.py 0.50",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Test mandelbrot (2)",
+      "setup": "",
+      "run": "timeout -s KILL 2m python3 tests/test_mandelbrot.py 0.75",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Test mandelbrot (3)",
+      "setup": "",
+      "run": "timeout -s KILL 2m python3 tests/test_mandelbrot.py 0.98",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Test Performance Report Existence",
+      "setup": "",
+      "run": "timeout -s9 2m bash tests/test_existence_perf.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "Test matrix multiplication perf usage",
+      "setup": "",
+      "run": "timeout -s9 2m bash tests/test_matrix_stat.sh 0.5 0.2 0.4 0.7 0.2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "Test mandelbrot perf usage",
+      "setup": "",
+      "run": "timeout -s9 2m bash tests/test_mandelbrot_stat.sh 0.4 0.4 0.4 0.4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "Test Map Solution (1)",
+      "setup": "",
+      "run": "timeout -s9 2m python3 tests/test_map.py 0.80",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Map Solution Test (2)",
+      "setup": "",
+      "run": "timeout -s9 2m python3 tests/test_map.py 0.98",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    }
+  ]
+}
