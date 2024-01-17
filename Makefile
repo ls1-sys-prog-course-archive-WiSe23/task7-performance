@@ -6,7 +6,7 @@ CARGO ?= cargo
 RUSTFLAGS ?= -g
 LDFLAGS = -lpthread
 
-.PHONY: all clean
+.PHONY: all clean performance boss libmatrix.so libmandelbrot.so matrix_profiling mandelbrot_profiling map check
 
 all: libmatrix.so libmandelbrot.so performance boss
 
